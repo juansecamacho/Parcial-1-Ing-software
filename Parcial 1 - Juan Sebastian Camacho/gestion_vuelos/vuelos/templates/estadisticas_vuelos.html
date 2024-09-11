@@ -1,0 +1,15 @@
+<!-- vuelos/templates/vuelos/estadisticas_vuelos.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estadísticas de Vuelos</title>
+</head>
+<body>
+    <h1>Estadísticas de Vuelos</h1>
+    <p>Total de Vuelos Nacionales: {{ stats.total_nacional }}</p>
+    <p>Total de Vuelos Internacionales: {{ stats.total_internacional }}</p>
+    <p>Precio Promedio de los Vuelos Nacionales: {{ stats.promedio_precio_nacional|default:"No disponible" }}</p>
+    <a href="{% url 'index' %}">Volver al inicio</a>
+</body>
+</html>
